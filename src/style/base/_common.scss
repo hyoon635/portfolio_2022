@@ -1,3 +1,5 @@
+@import "../helpers/mixin";
+
 .scroll-container {
   height: 100vh;
   min-height: -webkit-fill-available;
@@ -7,7 +9,35 @@
   overflow-y: scroll;
   overflow-x: hidden;
 
-  section {
+  .home,
+  .about {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    max-height: 990px;
     scroll-snap-align: start;
+    &__title {
+      @include mid(center, center);
+      height: 100%;
+    }
+
+    .title {
+      position: relative;
+
+      &__main {
+        font-family: "League Spartan", sans-serif;
+        font-size: 180px;
+        color: #efedeb;
+      }
+
+      &__sub {
+        @include absoluteCenter();
+        top: -40px;
+        font-family: "Song Myung", serif;
+        font-size: 40px;
+        text-align: center;
+        line-height: 1.4;
+      }
+    }
   }
 }
