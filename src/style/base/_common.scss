@@ -1,4 +1,4 @@
-@import "../helpers/mixin";
+@import "/src/style/helpers/mixin";
 
 .scroll-container {
   height: 100vh;
@@ -15,7 +15,9 @@
     height: 100vh;
     min-height: 700px;
     max-height: 990px;
+    padding: 0 40px;
     scroll-snap-align: start;
+
     &__title {
       @include mid(center, center);
       height: 100%;

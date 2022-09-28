@@ -2,10 +2,11 @@
 // reset
 // ---
 
-html, body {
+html,
+body {
   margin: 0;
- }
- 
+}
+
 *,
 *::before,
 *::after {
@@ -75,7 +76,6 @@ a:focus {
 
 a,
 button {
-
 }
 
 button {
@@ -124,10 +124,13 @@ html {
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
   font-size: 62.5%; //1em = 10px로 설정
-
 }
 
-
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
 
 .wrap {
   position: relative;
