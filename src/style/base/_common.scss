@@ -10,7 +10,8 @@
   overflow-x: hidden;
 
   .home,
-  .about {
+  .about,
+  .projects {
     position: relative;
     height: 100vh;
     min-height: 700px;
@@ -28,7 +29,7 @@
 
       &__main {
         font-family: "League Spartan", sans-serif;
-        font-size: 180px;
+        font-size: 18rem;
         color: #efedeb;
       }
 
@@ -36,7 +37,7 @@
         @include absoluteCenter();
         top: -40px;
         font-family: "Song Myung", serif;
-        font-size: 40px;
+        font-size: 4rem;
         text-align: center;
         line-height: 1.4;
       }

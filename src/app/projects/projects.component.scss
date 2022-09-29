@@ -1,0 +1,17 @@
+@import "/src/style/helpers/mixin";
+
+.projects {
+  &__title {
+    height: 50%;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .project {
+      &__title {
+      }
+    }
+  }
+}
