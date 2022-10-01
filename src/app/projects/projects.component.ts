@@ -7,14 +7,62 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
   projectList = [
-    { id: 0, name: 'songareeDM', title: '송아리 당뇨앱', url: '' },
-    { id: 1, name: 'songareeDoctors', title: '송아리 닥터스', url: '' },
-    { id: 2, name: 'songareeBP', title: '송아리 혈압앱', url: '' },
-    { id: 3, name: 'songareeWeb', title: '송아리 닥터스', url: '' },
-    { id: 4, name: 'songareeAppbook', title: '송아리 앱북 시리즈', url: '' },
-    { id: 5, name: 'songareeAir', title: '송아리 에어 IoT', url: '' },
-    { id: 6, name: 'songareeIT', title: '송아리아이티 홈페이지', url: '' },
-    { id: 7, name: 'songareeITAdmin', title: '송아리아이티 Admin', url: '' },
+    {
+      id: 0,
+      name: 'songareeDM',
+      type: 'app',
+      title: '송아리 당뇨앱',
+      Detailurl: '',
+    },
+    {
+      id: 1,
+      name: 'songareeDoctors',
+      type: 'web',
+      title: '송아리 닥터스',
+      Detailurl: '',
+    },
+    {
+      id: 2,
+      name: 'songareeBP',
+      type: 'app',
+      title: '송아리 혈압앱',
+      Detailurl: '',
+    },
+    {
+      id: 3,
+      name: 'songareeWeb',
+      type: 'web',
+      title: '송아리웹',
+      Detailurl: '',
+    },
+    {
+      id: 4,
+      name: 'songareeAppbook',
+      type: 'app',
+      title: '송아리 앱북 시리즈',
+      Detailurl: '',
+    },
+    {
+      id: 5,
+      name: 'songareeAir',
+      type: 'app',
+      title: '송아리 에어 IoT',
+      Detailurl: '',
+    },
+    {
+      id: 6,
+      name: 'songareeIT',
+      type: 'web',
+      title: '송아리아이티 홈페이지',
+      Detailurl: '',
+    },
+    {
+      id: 7,
+      name: 'songareeITAdmin',
+      type: 'web',
+      title: '송아리아이티 Admin',
+      Detailurl: '',
+    },
   ];
   constructor() {}
 

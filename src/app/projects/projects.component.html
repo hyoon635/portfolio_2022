@@ -7,6 +7,37 @@
   <div class="projects__list">
     <div class="project" *ngFor="let project of projectList">
       <div class="project__title">{{ project.title }}</div>
+      <div class="project__detail">
+        <p class="project__introduce"></p>
+        <div class="project__link">
+          <a href="">
+            <span class="link"
+              >App Store
+              <img
+                src="assets/icon/arrow-forward-outline.svg"
+                alt="forward arrow icon"
+                class="ic-forward-arrow"
+            /></span>
+          </a>
+          <a href="">
+            <span class="link"
+              >Google Play Store
+              <img
+                src="assets/icon/arrow-forward-outline.svg"
+                alt="forward arrow icon"
+                class="ic-forward-arrow"
+            /></span>
+          </a>
+          <a href=""
+            ><span class="link notion"
+              >작업 내용 자세히 보기
+              <img
+                src="assets/icon/arrow-forward-outline.svg"
+                alt="forward arrow icon"
+                class="ic-forward-arrow" /></span
+          ></a>
+        </div>
+      </div>
     </div>
   </div>
 </section>

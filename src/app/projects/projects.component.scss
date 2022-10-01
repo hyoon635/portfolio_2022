@@ -11,6 +11,18 @@
 
     .project {
       &__title {
+        font-size: 18px;
+      }
+
+      &__detail {
+      }
+
+      &__link {
+        .link {
+          .ic-forward-arrow {
+            width: 10px;
+          }
+        }
       }
     }
   }
