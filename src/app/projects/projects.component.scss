@@ -8,17 +8,27 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 50px 10px;
 
     .project {
+      width: 70%;
+      margin: auto;
+
       &__title {
         font-size: 18px;
       }
 
       &__detail {
+        margin-top: 20px;
       }
 
       &__link {
+        display: flex;
+        flex-direction: column;
+
         .link {
+          font-size: 14px;
+
           .ic-forward-arrow {
             width: 10px;
           }
