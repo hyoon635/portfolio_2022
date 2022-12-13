@@ -11,7 +11,9 @@
     align-items: center;
 
     .introduce {
-      font-size: 16px;
+      max-width: 560px;
+      word-break: keep-all;
+      font-size: 1.6rem;
       line-height: 1.6;
     }
 

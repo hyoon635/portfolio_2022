@@ -12,7 +12,7 @@ export class ProjectsComponent implements OnInit {
       name: 'songareeDM',
       type: 'app',
       title: '송아리 당뇨앱',
-      Detailurl: '',
+      Detailurl: 'https://www.notion.so/89408cd6aabc448291842473957250fa',
     },
     {
       id: 1,
