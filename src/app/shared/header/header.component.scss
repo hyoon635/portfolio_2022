@@ -7,11 +7,37 @@
     width: 100%;
     padding: 20px 40px;
     z-index: 999;
+
+    .menu {
+      margin-top: 10px;
+
+      &__list {
+      }
+
+      &__item {
+        margin-top: 3px;
+
+        a {
+          font-size: 1.8rem;
+
+          &.active {
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: underline;
+          }
+
+          &:hover {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
   }
 
   &__title {
     font-family: $f-anton;
-    font-size: 30px;
+    font-size: 3rem;
     text-transform: uppercase;
   }
 }

@@ -1,3 +1,31 @@
 <div class="header__inner">
-  <strong class="header__title">heeyoung</strong>
+  <a href="/">
+    <strong class="header__title">heeyoung</strong>
+  </a>
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a (click)="goPage('home')" [class.active]="currentPage === 'home'"
+          >HOME</a
+        >
+      </li>
+      <li class="menu__item">
+        <a (click)="goPage('about')" [class.active]="currentPage === 'about'"
+          >ABOUT</a
+        >
+      </li>
+      <li class="menu__item">
+        <a
+          (click)="goPage('projects')"
+          [class.active]="currentPage === 'projects'"
+          >PROJECTS</a
+        >
+      </li>
+      <li class="menu__item">
+        <a (click)="goPage('contact')" [class.active]="currentPage === 'ontact'"
+          >CONTACT</a
+        >
+      </li>
+    </ul>
+  </nav>
 </div>
