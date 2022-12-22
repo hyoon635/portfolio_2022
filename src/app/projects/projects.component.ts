@@ -12,6 +12,7 @@ export class ProjectsComponent implements OnInit {
       name: 'songareeDM',
       type: 'app',
       title: '송아리 당뇨앱',
+      introduce: '당뇨 수첩을 대체할 수 있는 모바일 앱 서비스',
       Detailurl: 'https://www.notion.so/89408cd6aabc448291842473957250fa',
     },
     {
@@ -19,49 +20,51 @@ export class ProjectsComponent implements OnInit {
       name: 'songareeDoctors',
       type: 'web',
       title: '송아리 닥터스',
-      Detailurl: '',
+      introduce:
+        '송아리당뇨 앱을 사용하는 환자의 기록 정보를 의료진에게 제공하는 웹 모니터링 서비스',
+      Detailurl: 'https://www.notion.so/8c5c362511324838b9d6bea70ca35579',
     },
     {
       id: 2,
       name: 'songareeBP',
       type: 'app',
       title: '송아리 혈압앱',
-      Detailurl: '',
+      introduce: '혈압 관리를 위한 모바일 앱 서비스',
+      Detailurl: 'https://www.notion.so/4d624be0ee0f4a39ad4042828fbce256',
     },
     {
       id: 3,
       name: 'songareeWeb',
       type: 'web',
       title: '송아리웹',
-      Detailurl: '',
+      introduce:
+        '송아리에서 제공하는 앱 서비스을 통해 입력한 데이터를 관리할 수 있는 웹 서비스',
+      Detailurl: 'https://www.notion.so/d773d194e990491fbff70c346197f1a5',
     },
     {
       id: 4,
       name: 'songareeAppbook',
       type: 'app',
       title: '송아리 앱북 시리즈',
-      Detailurl: '',
+      introduce:
+        '의학적 지식을 전문 의료진이 제작하여 제공하는 모바일 학습 서비스',
+      Detailurl: 'https://www.notion.so/87c661bad8ac481bb5550b128426ec73',
     },
     {
       id: 5,
       name: 'songareeAir',
       type: 'app',
       title: '송아리 에어 IoT',
-      Detailurl: '',
+      introduce: '개인용 산소포화도 모니터링 앱 서비스',
+      Detailurl: 'https://www.notion.so/IoT-3012023063aa47b9a08e50c6deaff211',
     },
     {
       id: 6,
       name: 'songareeIT',
       type: 'web',
       title: '송아리아이티 홈페이지',
-      Detailurl: '',
-    },
-    {
-      id: 7,
-      name: 'songareeITAdmin',
-      type: 'web',
-      title: '송아리아이티 Admin',
-      Detailurl: '',
+      introduce: '송아리아이티 홈페이지',
+      Detailurl: 'https://www.notion.so/cecb55ec38f1428b9d660314482b07b5',
     },
   ];
   constructor() {}

@@ -7,8 +7,10 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 25%);
     gap: 50px 10px;
+    justify-content: center;
+    text-align: center;
 
     .project {
       width: 70%;
@@ -16,6 +18,13 @@
 
       &__title {
         font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      &__introduce {
+        font-size: 1.4rem;
+        word-break: keep-all;
       }
 
       &__detail {
@@ -25,12 +34,36 @@
       &__link {
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
 
         .link {
+          position: relative;
           font-size: 1.4rem;
 
           .ic-forward-arrow {
             width: 10px;
+          }
+
+          &::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #4a4a4a;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+          }
+
+          &:hover {
+            font-weight: 500;
+
+            &::before {
+              transform: scaleX(1);
+              transform-origin: bottom left;
+            }
           }
         }
       }
