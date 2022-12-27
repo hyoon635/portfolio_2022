@@ -25,21 +25,46 @@
     }
 
     .title {
-      position: relative;
-
       &__main {
+        // position: fixed;
+        // width: 100%;
+        // left: 0;
+        text-align: center;
         font-family: "League Spartan", sans-serif;
         font-size: 18rem;
         color: #efedeb;
       }
 
       &__sub {
-        @include absoluteCenter();
-        top: -40px;
+        position: relative;
         font-family: "Song Myung", serif;
         font-size: 3.6rem;
         text-align: center;
         line-height: 1.6;
+        z-index: 5;
+      }
+    }
+  }
+
+  .home {
+    .title {
+      &__main {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        font-family: "League Spartan", sans-serif;
+        font-size: 18rem;
+        color: #efedeb;
+      }
+
+      &__sub {
+        position: relative;
+        font-family: "Song Myung", serif;
+        font-size: 3.6rem;
+        text-align: center;
+        line-height: 1.6;
+        z-index: 5;
       }
     }
   }
