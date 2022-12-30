@@ -2,24 +2,42 @@
 
 .about {
   &__title {
-    height: 50%;
+    height: 45%;
   }
 
   &__introduce {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-
-    .introduce {
-      max-width: 560px;
-      word-break: keep-all;
-      font-size: 1.6rem;
-      line-height: 1.6;
-    }
 
     .img-wrapper {
       max-width: 500px;
-      margin: auto;
+      margin: 0 auto;
+    }
+
+    .introduce {
+      max-width: 560px;
+
+      &__text {
+        word-break: keep-all;
+        font-size: 1.6rem;
+        line-height: 1.6;
+      }
+
+      &__resume {
+        margin-top: 40px;
+
+        .resume-link {
+          padding: 15px 45px;
+          border: 1px solid #4a4a4a;
+          border-radius: 5px;
+          font-size: 1.6rem;
+
+          &:hover {
+            border-color: #80bfff;
+            color: #80bfff;
+          }
+        }
+      }
     }
   }
 }
