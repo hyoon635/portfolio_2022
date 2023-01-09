@@ -1,6 +1,11 @@
 @import "/src/style/helpers/mixin";
 @import "src/style/helpers/variables";
 
+html,
+body {
+  font-family: $f-noto;
+}
+
 .scroll-container {
   height: 100vh;
   min-height: -webkit-fill-available;
@@ -68,6 +73,7 @@
 
       &__sub {
         position: relative;
+        width: 100vw;
         font-family: "Gowun Dodum", sans-serif;
         font-size: 3.6rem;
         text-align: center;

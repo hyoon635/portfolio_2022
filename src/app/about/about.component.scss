@@ -8,6 +8,7 @@
   &__introduce {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 
     .img-wrapper {
       max-width: 500px;
@@ -33,8 +34,8 @@
           font-size: 1.6rem;
 
           &:hover {
-            border-color: #80bfff;
-            color: #80bfff;
+            border-color: #fa8072;
+            color: #fa8072;
           }
         }
       }

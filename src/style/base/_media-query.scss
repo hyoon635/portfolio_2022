@@ -1,0 +1,50 @@
+@import "/src/style/helpers/mixin";
+
+.scroll-container {
+  .main {
+    @media screen and (max-width: 1023px) {
+      .about,
+      .projects {
+        &__title {
+          height: 30%;
+
+          .title {
+            margin-bottom: -50px;
+          }
+        }
+      }
+
+      .about {
+        &__title {
+          height: 30%;
+
+          .title {
+            margin-bottom: -50px;
+          }
+        }
+
+        &__introduce {
+          grid-template-columns: none;
+
+          .img-wrapper {
+            display: none;
+          }
+
+          .introduce {
+            margin: auto;
+
+            &__resume {
+              .resume-link {
+                @include mid(center, center);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      /* 모바일 */
+    }
+  }
+}
