@@ -1,50 +1,99 @@
 @import "/src/style/helpers/mixin";
 
-.scroll-container {
-  .main {
-    @media screen and (max-width: 1023px) {
-      .about,
-      .projects {
-        &__title {
-          height: 30%;
+body {
+  @media screen and (max-width: 1023px) {
+    .scroll-container {
+      .main {
+        .about,
+        .projects {
+          &__title {
+            height: 30%;
 
-          .title {
-            margin-bottom: -50px;
-          }
-        }
-      }
-
-      .about {
-        &__title {
-          height: 30%;
-
-          .title {
-            margin-bottom: -50px;
+            .title {
+              margin-bottom: -50px;
+            }
           }
         }
 
-        &__introduce {
-          grid-template-columns: none;
+        .about {
+          &__title {
+            height: 30%;
 
-          .img-wrapper {
-            display: none;
+            .title {
+              margin-bottom: -50px;
+            }
           }
 
-          .introduce {
-            margin: auto;
+          &__introduce {
+            grid-template-columns: none;
 
-            &__resume {
-              .resume-link {
-                @include mid(center, center);
+            .img-wrapper {
+              display: none;
+            }
+
+            .introduce {
+              margin: auto;
+
+              &__resume {
+                .resume-link {
+                  @include mid(center, center);
+                }
               }
             }
           }
         }
+
+        .projects {
+          &__list {
+            grid-template-columns: repeat(2, 50%);
+          }
+        }
       }
     }
+  }
 
-    @media screen and (max-width: 767px) {
-      /* 모바일 */
+  /* 모바일 */
+  @media screen and (max-width: 767px) {
+    .scroll-container {
+      scroll-snap-type: unset;
+
+      .main {
+        .home,
+        .about,
+        .projects {
+          height: auto;
+          max-height: unset;
+
+          &__title {
+            .title {
+              margin-bottom: 0;
+
+              &__main {
+                font-size: 10rem;
+              }
+
+              &__sub {
+                font-size: 3rem;
+              }
+            }
+          }
+        }
+
+        .home {
+          &__title {
+            height: 100vh;
+          }
+        }
+
+        .projects {
+          padding-top: 100px;
+
+          &__list {
+            grid-template-columns: none;
+            margin-top: 50px;
+          }
+        }
+      }
     }
   }
 }
