@@ -1,5 +1,6 @@
 @import "/src/style/helpers/mixin";
 @import "src/style/helpers/variables";
+@import "src/style/helpers/mediaQuery";
 
 .projects {
   &__title {
@@ -15,6 +16,12 @@
       .swiper-button-next {
         top: 45%;
         color: #4a4a4a;
+
+        @include res--mobile {
+          &::after {
+            font-size: 20px;
+          }
+        }
 
         &::after {
           font-size: 30px;
@@ -38,12 +45,23 @@
             grid-template-columns: repeat(2, 1fr);
             min-height: 400px;
 
+            @include res--mobile {
+              grid-template-rows: 350px auto;
+              grid-template-columns: unset;
+              height: 550px;
+            }
+
             &__img {
+              display: flex;
               max-width: 300px;
-              margin: auto;
+              margin: 0 auto 20px;
 
               &.web {
                 max-width: 400px;
+
+                @include res--mobile {
+                  max-width: 350px;
+                }
               }
             }
 
@@ -52,6 +70,11 @@
               justify-content: center;
               align-items: flex-start;
               flex-direction: column;
+
+              @include res--mobile {
+                justify-content: flex-start;
+                padding: 0 20px;
+              }
             }
 
             &__title {
