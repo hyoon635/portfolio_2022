@@ -2,6 +2,40 @@
 @import "src/style/helpers/variables";
 
 .home {
+  .title {
+    @include flex(center, center);
+    height: 100%;
+
+    &__main {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      font-family: "League Spartan", sans-serif;
+      font-size: 18rem;
+      color: transparent;
+      -webkit-text-stroke: 2px #efedeb;
+
+      &--animation {
+        color: #efedeb;
+        animation: textWave 3s ease-in-out infinite;
+      }
+    }
+
+    &__sub {
+      position: relative;
+      @include flex(center, center);
+      width: 100vw;
+      height: 100%;
+      font-family: "Gowun Dodum", sans-serif;
+      font-size: 3.6rem;
+      text-align: center;
+      line-height: 1.6;
+      z-index: 5;
+      animation: fadein 3s;
+    }
+  }
+
   &__intro {
     position: absolute;
     bottom: 0;

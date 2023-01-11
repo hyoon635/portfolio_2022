@@ -1,4 +1,4 @@
-@mixin mid($a: center, $j: center) {
+@mixin flex($a: center, $j: center) {
   display: flex;
   align-items: $a;
   justify-content: $j;
@@ -11,4 +11,9 @@
   bottom: 0;
   left: 0;
   margin: auto;
+}
+
+@mixin background($position, $size) {
+  background-position: $position;
+  background-size: $size;
 }

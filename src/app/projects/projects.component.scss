@@ -1,68 +1,116 @@
 @import "/src/style/helpers/mixin";
+@import "src/style/helpers/variables";
 
 .projects {
   &__title {
-    height: 50%;
+    height: 45%;
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(3, 25%);
-    gap: 50px 10px;
-    justify-content: center;
-    text-align: center;
+    max-width: 1200px;
+    margin: auto;
 
-    .project {
-      width: 70%;
-      margin: auto;
+    ::ng-deep .swiper {
+      .swiper-button-prev,
+      .swiper-button-next {
+        top: 45%;
+        color: #4a4a4a;
 
-      &__title {
-        font-size: 1.8rem;
-        font-weight: bold;
-        text-align: center;
+        &::after {
+          font-size: 30px;
+        }
       }
 
-      &__introduce {
-        font-size: 1.4rem;
-        word-break: keep-all;
-      }
+      .swiper-pagination {
+        .swiper-pagination-bullet {
+          background-color: #b3b3b3;
 
-      &__detail {
-        margin-top: 20px;
-      }
-
-      &__link {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-
-        .link {
-          position: relative;
-          font-size: 1.4rem;
-
-          .ic-forward-arrow {
-            width: 10px;
+          &.swiper-pagination-bullet-active {
+            background-color: #fa8072;
           }
+        }
+      }
 
-          &::before {
-            position: absolute;
-            content: "";
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background-color: #4a4a4a;
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.25s ease-out;
-          }
+      .swiper-wrapper {
+        .swiper-slide {
+          .project {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            min-height: 400px;
 
-          &:hover {
-            font-weight: 500;
+            &__img {
+              max-width: 300px;
+              margin: auto;
 
-            &::before {
-              transform: scaleX(1);
-              transform-origin: bottom left;
+              &.web {
+                max-width: 400px;
+              }
+            }
+
+            &__detail {
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              flex-direction: column;
+            }
+
+            &__title {
+              font-size: 3rem;
+              font-weight: 500;
+            }
+
+            &__introduce {
+              max-width: 305px;
+              word-break: keep-all;
+              font-size: 1.6rem;
+              margin-top: 20px;
+            }
+
+            &__link {
+              display: flex;
+              flex-direction: column;
+              margin-top: 10px;
+
+              .link {
+                position: relative;
+                @include flex(center, unset);
+                font-size: 1.4rem;
+
+                .ic-forward-arrow {
+                  display: inline-block;
+                  width: 14px;
+                  height: 14px;
+                  background-image: url("#{$path-icon}/arrow-forward-outline.svg");
+                  @include background(center, contain);
+                }
+
+                &::before {
+                  position: absolute;
+                  content: "";
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 1px;
+                  background-color: #fa8072;
+                  transform: scaleX(0);
+                  transform-origin: bottom right;
+                  transition: transform 0.25s ease-out;
+                }
+
+                &:hover {
+                  font-weight: 500;
+                  color: #fa8072;
+
+                  .ic-forward-arrow {
+                    background-image: url("#{$path-icon}/arrow-forward-outline-active.svg");
+                  }
+
+                  &::before {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                  }
+                }
+              }
             }
           }
         }

@@ -36,7 +36,7 @@ body {
 
               &__resume {
                 .resume-link {
-                  @include mid(center, center);
+                  @include flex(center, center);
                 }
               }
             }

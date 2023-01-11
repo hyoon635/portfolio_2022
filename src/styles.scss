@@ -6,6 +6,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
 
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/scss/pagination";
+
 @import "./style/base/reset";
 @import "./style/base/media-query";
 @import "./style/base/common";
