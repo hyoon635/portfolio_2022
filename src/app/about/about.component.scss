@@ -1,6 +1,11 @@
 @import "/src/style/helpers/mixin";
+@import "src/style/helpers/mediaQuery";
 
 .about {
+  @include res--tablet {
+    padding-top: 40px;
+  }
+
   &__title {
     height: 40%;
   }
@@ -9,6 +14,25 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+
+    @include res--tablet {
+      grid-template-columns: none;
+      margin-top: 20px;
+
+      .img-wrapper {
+        display: none;
+      }
+
+      .introduce {
+        margin: auto;
+
+        &__resume {
+          .resume-link {
+            @include flex(center, center);
+          }
+        }
+      }
+    }
 
     .img-wrapper {
       max-width: 500px;

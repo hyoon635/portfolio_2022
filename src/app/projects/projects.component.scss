@@ -3,6 +3,10 @@
 @import "src/style/helpers/mediaQuery";
 
 .projects {
+  @include res--tablet {
+    padding-top: 80px;
+  }
+
   &__title {
     height: 45%;
   }

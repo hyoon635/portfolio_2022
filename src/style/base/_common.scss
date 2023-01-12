@@ -1,5 +1,6 @@
 @import "/src/style/helpers/mixin";
 @import "src/style/helpers/variables";
+@import "src/style/helpers/mediaQuery";
 
 html,
 body {
@@ -15,6 +16,10 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 
+  @include res--mobile {
+    scroll-snap-type: unset;
+  }
+
   .home,
   .about,
   .projects {
@@ -26,20 +31,30 @@ body {
     scroll-snap-align: start;
     background-color: #fff;
 
+    @include res--mobile {
+      height: auto;
+      max-height: unset;
+    }
+
     &__title {
       @include flex(center, center);
       height: 100%;
+
+      @include res--tablet {
+        height: 30%;
+      }
     }
 
     .title {
       &__main {
-        // position: fixed;
-        // width: 100%;
-        // left: 0;
         text-align: center;
         font-family: "League Spartan", sans-serif;
         font-size: 16rem;
         color: #efedeb;
+
+        @include res--mobile {
+          font-size: 10rem;
+        }
       }
 
       &__sub {
@@ -49,6 +64,10 @@ body {
         text-align: center;
         line-height: 1.6;
         z-index: 5;
+
+        @include res--mobile {
+          font-size: 3rem;
+        }
       }
     }
   }
