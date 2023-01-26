@@ -1,6 +1,4 @@
-// ---
 // mediaQueries
-// ---
 
 // Break Point
 $desktop: 1600px;
@@ -8,8 +6,6 @@ $laptop: 1280px;
 $laptopSM: 980px;
 $tablet: 640px;
 $mobile: 360px;
-
-// ---------- * ----------
 
 // Desktop
 @mixin res--desktop {
